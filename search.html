@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - InTrust</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Contents/logo/Logo-Intrust.jpg" alt="InTrust Logo">
+                </a>
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul class="menu">
+                    <li class="menu-item has-dropdown">
+                        <a href="#">Company</a>
+                        <ul class="dropdown">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Mission & Vision</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-mega-menu">
+                        <a href="#">Products</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-column">
+                                <h4>Automation</h4>
+                                <ul>
+                                    <li><a href="#">Roller/Rolling Shutter</a></li>
+                                    <li><a href="#">Automatic Raising Bollards</a></li>
+                                    <li><a href="#">Automatic Sliding Gate</a></li>
+                                    <li><a href="#">Automatic Swing Gate</a></li>
+                                    <li><a href="#">Curtains Controller</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Barriers & Access</h4>
+                                <ul>
+                                    <li><a href="#">Parking Barrier</a></li>
+                                    <li><a href="#">Turnstile Barrier</a></li>
+                                    <li><a href="#">Collapsible Gate</a></li>
+                                    <li><a href="#">Road Blocker</a></li>
+                                    <li><a href="#">Hydraulic Dock Leveler</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Security Systems</h4>
+                                <ul>
+                                    <li><a href="#">PIR Motion Sensor</a></li>
+                                    <li><a href="#">Acoustic Movable Wall</a></li>
+                                    <li><a href="#">IP-CCTV</a></li>
+                                    <li><a href="#">Metal Detector</a></li>
+                                    <li><a href="#">Access Control</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item has-dropdown">
+                        <a href="#">Technology</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Innovation</a></li>
+                            <li><a href="#">R&D</a></li>
+                            <li><a href="#">Partners</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="#">Projects</a></li>
+                    <li class="menu-item"><a href="#">Support</a></li>
+                    <li class="menu-item"><a href="#">Training</a></li>
+                </ul>
+            </nav>
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <!-- Search -->
+                <div class="search-trigger">
+                    <button id="search-btn" class="icon-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <!-- Hotline -->
+                <div class="hotline">
+                    <div class="hotline-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="hotline-text">
+                        <span>Hotline</span>
+                        <a href="tel:+8801730592808">+88 01730592808</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-toggle" class="icon-btn mobile-only">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Search Panel -->
+        <div class="search-panel" id="search-panel">
+            <div class="container">
+                <div class="search-bar-wrapper">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button id="search-submit-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Mobile Menu Drawer -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    <div class="mobile-menu-drawer" id="mobile-menu-drawer">
+        <div class="drawer-header">
+            <img src="Contents/logo/Logo-Intrust.jpg" alt="InTrust Logo" class="drawer-logo">
+            <button id="close-drawer-btn" class="icon-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="drawer-content">
+            <ul class="mobile-menu">
+                <li class="mobile-item has-children">
+                    <div class="mobile-link-wrapper">
+                        <a href="#">Company</a>
+                        <button class="submenu-toggle"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Mission & Vision</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-item has-children">
+                    <div class="mobile-link-wrapper">
+                        <a href="#">Products</a>
+                        <button class="submenu-toggle"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Roller/Rolling Shutter</a></li>
+                        <li><a href="#">Automatic Raising Bollards</a></li>
+                        <li><a href="#">Automatic Sliding Gate</a></li>
+                        <li><a href="#">Automatic Swing Gate</a></li>
+                        <li><a href="#">Curtains Controller</a></li>
+                        <li><a href="#">Parking Barrier</a></li>
+                        <li><a href="#">Turnstile Barrier</a></li>
+                        <li><a href="#">Collapsible Gate</a></li>
+                        <li><a href="#">Road Blocker</a></li>
+                        <li><a href="#">Hydraulic Dock Leveler</a></li>
+                        <li><a href="#">PIR Motion Sensor</a></li>
+                        <li><a href="#">Acoustic Movable Wall</a></li>
+                        <li><a href="#">IP-CCTV</a></li>
+                        <li><a href="#">Metal Detector</a></li>
+                        <li><a href="#">Access Control</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-item has-children">
+                    <div class="mobile-link-wrapper">
+                        <a href="#">Technology</a>
+                        <button class="submenu-toggle"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Innovation</a></li>
+                        <li><a href="#">R&D</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-item"><a href="#">Projects</a></li>
+                <li class="mobile-item"><a href="#">Support</a></li>
+                <li class="mobile-item"><a href="#">Training</a></li>
+            </ul>
+        </div>
+    </div>
+    <main class="search-page-content">
+        <div class="container">
+            <div class="search-bar-wrapper">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button id="search-submit-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="search-header">
+
+                <h1 id="search-query-display">Search Results</h1>
+                <div class="search-filters">
+                    <button class="filter-btn active">ALL (4)</button>
+                    <button class="filter-btn">SERIES (4)</button>
+                </div>
+            </div>
+
+            <div class="search-results-list">
+                <!-- Result Item 1 -->
+                <div class="search-result-item">
+                    <div class="result-image">
+                        <img src="Contents/images/sample-1.png" alt="PG 04 55">
+                    </div>
+                    <div class="result-content">
+                        <div class="result-header">
+                            <h3 class="result-title"><a href="#">PG 04 55</a></h3>
+                            <span class="result-series">Series</span>
+                        </div>
+                        <div class="result-description">
+                            <p>Bi-directional, motor-driven lane with swing doors, 550 mm wide. Electro-galvanized steel
+                                chassis within a steel body coated with black silk textured electrostatic powder paint,
+                                with black tempered glass top and front panels and tempered glass wings (door height 900
+                                mm). Equipped with dynamic status indicators on the sides and on top. Designed to
+                                operate always paired as master and slave.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Result Item 2 -->
+                <div class="search-result-item">
+                    <div class="result-image">
+                        <img src="Contents/images/sample-2.jpg" alt="PG 04 90">
+                    </div>
+                    <div class="result-content">
+                        <div class="result-header">
+                            <h3 class="result-title"><a href="#">PG 04 90</a></h3>
+                            <span class="result-series">Series</span>
+                        </div>
+                        <div class="result-description">
+                            <p>Bi-directional, motor-driven lane with swing doors, 900 mm wide. Electro-galvanized steel
+                                chassis within a steel body coated with black silk textured electrostatic powder paint,
+                                with black tempered glass top and front panels and tempered glass wings (door height 900
+                                mm). Equipped with dynamic status indicators on the sides and on top. 14-beam integrated
+                                smart sensors monitor users passing through the gate.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Result Item 3 -->
+                <div class="search-result-item">
+                    <div class="result-image">
+                        <img src="Contents/images/sample-3.jpg" alt="HG 04">
+                    </div>
+                    <div class="result-content">
+                        <div class="result-header">
+                            <h3 class="result-title"><a href="#">HG 04</a></h3>
+                            <span class="result-series">Series</span>
+                        </div>
+                        <div class="result-description">
+                            <p>Bidirectional motorized speed gate with retractable wings, 570 mm clear passage width.
+                                Frame in satin brushed AISI 304 stainless steel; AISI 316 or painted finish optional.
+                                Top panel in black tempered glass and wings in tempered glass. Equipped with dynamic
+                                status indicators on the sides and on top. Designed to operate always paired as master
+                                and slave.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Result Item 4 -->
+                <div class="search-result-item">
+                    <div class="result-image">
+                        <img src="Contents/images/sample-4.jpg" alt="HG 04 DP">
+                    </div>
+                    <div class="result-content">
+                        <div class="result-header">
+                            <h3 class="result-title"><a href="#">HG 04 DP</a></h3>
+                            <span class="result-series">Series</span>
+                        </div>
+                        <div class="result-description">
+                            <p>Bidirectional motorized speed gate with retractable wings, 900 mm clear passage width.
+                                Frame in satin brushed AISI 304 stainless steel; AISI 316 or painted finish optional.
+                                Top panel in black tempered glass and wings in tempered glass. Equipped with dynamic
+                                status indicators on the sides and on top. Designed to operate always paired as master
+                                and slave.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+    <script>
+        // Display query from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const query = urlParams.get('q');
+        if (query) {
+            document.getElementById('search-query-display').textContent = `Search Results for: "${query}"`;
+            document.querySelector('#search-input').value = query;
+        }
+    </script>
+</body>
+
+</html>

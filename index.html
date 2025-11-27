@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InTrust - Automated Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">
+                    <img src="Contents/logo/Logo-Intrust.jpg" alt="InTrust Logo">
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul class="menu">
+                    <li class="menu-item has-dropdown">
+                        <a href="#">Company</a>
+                        <ul class="dropdown">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Mission & Vision</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-mega-menu">
+                        <a href="#">Products</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-column">
+                                <h4>Automation</h4>
+                                <ul>
+                                    <li><a href="#">Roller/Rolling Shutter</a></li>
+                                    <li><a href="#">Automatic Raising Bollards</a></li>
+                                    <li><a href="#">Automatic Sliding Gate</a></li>
+                                    <li><a href="#">Automatic Swing Gate</a></li>
+                                    <li><a href="#">Curtains Controller</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Barriers & Access</h4>
+                                <ul>
+                                    <li><a href="#">Parking Barrier</a></li>
+                                    <li><a href="#">Turnstile Barrier</a></li>
+                                    <li><a href="#">Collapsible Gate</a></li>
+                                    <li><a href="#">Road Blocker</a></li>
+                                    <li><a href="#">Hydraulic Dock Leveler</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Security Systems</h4>
+                                <ul>
+                                    <li><a href="#">PIR Motion Sensor</a></li>
+                                    <li><a href="#">Acoustic Movable Wall</a></li>
+                                    <li><a href="#">IP-CCTV</a></li>
+                                    <li><a href="#">Metal Detector</a></li>
+                                    <li><a href="#">Access Control</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item has-dropdown">
+                        <a href="#">Technology</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Innovation</a></li>
+                            <li><a href="#">R&D</a></li>
+                            <li><a href="#">Partners</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="#">Projects</a></li>
+                    <li class="menu-item"><a href="#">Support</a></li>
+                    <li class="menu-item"><a href="#">Training</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <!-- Search -->
+                <div class="search-trigger">
+                    <button id="search-btn" class="icon-btn"><i class="fas fa-search"></i></button>
+                </div>
+
+                <!-- Hotline -->
+                <div class="hotline">
+                    <div class="hotline-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="hotline-text">
+                        <span>Hotline</span>
+                        <a href="tel:+8801730592808">+88 01730592808</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-toggle" class="icon-btn mobile-only">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Search Panel (New) -->
+        <div class="search-panel" id="search-panel">
+            <div class="container">
+                <div class="search-bar-wrapper">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button id="search-submit-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    <div class="mobile-menu-drawer" id="mobile-menu-drawer">
+        <div class="drawer-header">
+            <img src="Contents/logo/Logo-Intrust.jpg" alt="InTrust Logo" class="drawer-logo">
+            <button id="close-drawer-btn" class="icon-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="drawer-content">
+            <ul class="mobile-menu">
+                <li class="mobile-item has-children">
+                    <div class="mobile-link-wrapper">
+                        <a href="#">Company</a>
+                        <button class="submenu-toggle"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Mission & Vision</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-item has-children">
+                    <div class="mobile-link-wrapper">
+                        <a href="#">Products</a>
+                        <button class="submenu-toggle"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Roller/Rolling Shutter</a></li>
+                        <li><a href="#">Automatic Raising Bollards</a></li>
+                        <li><a href="#">Automatic Sliding Gate</a></li>
+                        <li><a href="#">Automatic Swing Gate</a></li>
+                        <li><a href="#">Curtains Controller</a></li>
+                        <li><a href="#">Parking Barrier</a></li>
+                        <li><a href="#">Turnstile Barrier</a></li>
+                        <li><a href="#">Collapsible Gate</a></li>
+                        <li><a href="#">Road Blocker</a></li>
+                        <li><a href="#">Hydraulic Dock Leveler</a></li>
+                        <li><a href="#">PIR Motion Sensor</a></li>
+                        <li><a href="#">Acoustic Movable Wall</a></li>
+                        <li><a href="#">IP-CCTV</a></li>
+                        <li><a href="#">Metal Detector</a></li>
+                        <li><a href="#">Access Control</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-item has-children">
+                    <div class="mobile-link-wrapper">
+                        <a href="#">Technology</a>
+                        <button class="submenu-toggle"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Innovation</a></li>
+                        <li><a href="#">R&D</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-item"><a href="#">Projects</a></li>
+                <li class="mobile-item"><a href="#">Support</a></li>
+                <li class="mobile-item"><a href="#">Training</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content Placeholder (for scrolling test) -->
+    <main style="padding-top: 100px; min-height: 200vh; background-color: #f9f9f9;">
+        <div class="container">
+            <h1 style="text-align: center; padding: 50px 0; color: #333;">Welcome to InTrust</h1>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto; color: #666;">
+                Offering high quality automated solution within your budget and provide protection for your trade and
+                industry.
+            </p>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
