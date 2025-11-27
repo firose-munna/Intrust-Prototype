@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -20,7 +22,7 @@
             <!-- Logo -->
             <div class="logo">
                 <a href="#">
-                    <img src="Contents/logo/Logo-Intrust.jpg" alt="InTrust Logo">
+                    <img src="Contents/logo/Logo-Intrust1.jpg" alt="InTrust Logo">
                 </a>
             </div>
 
@@ -183,6 +185,69 @@
         </div>
     </div>
 
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="slide-background">
+                        <!-- <img src="Contents/images/sample-1.png" alt="Slide 1"> -->
+                        <video autoplay muted loop playsinline>
+                            <source
+                                src="https://came-cdn.thron.com/delivery/public/video/came/4cf64b82-d58b-4d88-b77d-a88f34c25e85/5rlivz/WEBFULLHD/new-ati-homepage-video"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="slide-content container">
+                        <h1 class="animate-text">Automated Solutions for a Secure Future</h1>
+                        <p class="animate-text delay-100">Providing high-quality automated solutions within your budget.
+                        </p>
+                        <a href="#" class="hero-btn animate-text delay-200">Explore Products</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="slide-background">
+                        <img src="Contents/images/sample-2.jpg" alt="Slide 2">
+                    </div>
+                    <div class="slide-content container">
+                        <h1 class="animate-text">Advanced Security Systems</h1>
+                        <p class="animate-text delay-100">State-of-the-art security for your peace of mind.</p>
+                        <a href="#" class="hero-btn animate-text delay-200">Learn More</a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="slide-background">
+                        <img src="Contents/images/sample-3.jpg" alt="Slide 3">
+                    </div>
+                    <div class="slide-content container">
+                        <h1 class="animate-text">Innovative Barrier Technologies</h1>
+                        <p class="animate-text delay-100">Robust and reliable barriers for controlled access.</p>
+                        <a href="#" class="hero-btn animate-text delay-200">View Barriers</a>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="slide-background">
+                        <img src="Contents/images/sample-4.jpg" alt="Slide 4">
+                    </div>
+                    <div class="slide-content container">
+                        <h1 class="animate-text">Smart Home Automation</h1>
+                        <p class="animate-text delay-100">Transform your living space with intelligent solutions.</p>
+                        <a href="#" class="hero-btn animate-text delay-200">Discover More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
     <!-- Main Content Placeholder (for scrolling test) -->
     <main style="padding-top: 100px; min-height: 200vh; background-color: #f9f9f9;">
         <div class="container">
@@ -194,6 +259,8 @@
         </div>
     </main>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

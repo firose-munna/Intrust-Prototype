@@ -105,4 +105,25 @@ document.addEventListener('DOMContentLoaded', () => {
             header.style.height = '80px';
         }
     });
+    // Hero Slider Initialization
+    const heroSlider = new Swiper('.hero-slider .swiper-container', {
+        loop: true,
+        // autoplay: {
+        //     delay: 7000,
+        //     disableOnInteraction: false,
+        // },
+        speed: 800,
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 });
