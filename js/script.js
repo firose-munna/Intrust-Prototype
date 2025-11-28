@@ -164,4 +164,19 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    // Show More Products Functionality
+    const showMoreBtn = document.getElementById('show-more-products-btn');
+    if (showMoreBtn) {
+        showMoreBtn.addEventListener('click', () => {
+            const hiddenProducts = document.querySelectorAll('.product-item.hidden');
+            hiddenProducts.forEach(product => {
+                product.classList.remove('hidden');
+                product.classList.add('slide-up');
+            });
+
+            // Hide the button as there are no more products to show
+            showMoreBtn.style.display = 'none';
+        });
+    }
 });
