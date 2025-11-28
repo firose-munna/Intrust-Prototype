@@ -992,6 +992,7 @@ ul {
 .hero-slider .swiper-container {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .hero-slider .swiper-slide {
