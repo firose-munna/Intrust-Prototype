@@ -5,13 +5,16 @@
 
 .section-header {
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--secondary-color);
-    margin-bottom: 10px;
+    margin-bottom: 0;
     position: relative;
     display: inline-block;
 }
@@ -25,13 +28,10 @@
 .category-slider {
     position: relative;
     padding: 0;
-    /* Space for arrows */
 }
 
 .category-slider-nav {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     display: flex;
     gap: 10px;
 }
@@ -75,7 +75,6 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    /* Optional: filter to change SVG color if needed, but keeping original for now */
 }
 
 .category-name {
@@ -90,7 +89,7 @@
     color: var(--primary-color);
 }
 
-/* Category Slider Navigation (Reusing/Overriding Hero Styles) */
+/* Category Slider Navigation */
 
 .category-slider .swiper-container {
     overflow: hidden;
@@ -113,6 +112,8 @@
     border-radius: 50%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
+    position: static;
+    margin: 0;
 }
 
 .category-slider-nav .swiper-button-next:hover,
@@ -127,21 +128,12 @@
     font-weight: bold;
 }
 
-.category-slider-nav .swiper-button-prev {
-    left: 0;
-}
-
-.category-slider-nav .swiper-button-next {
-    right: 0;
-}
-
 /* Category Slider Pagination */
 .category-slider .swiper-pagination {
     position: relative;
     margin-top: 20px;
     bottom: 0;
 }
-
 
 .category-slider .swiper-pagination-bullet {
     width: 20px;
@@ -157,5 +149,4 @@
     width: 40px;
     background-color: var(--primary-color);
     opacity: 1;
-    /* Using accent color for better visibility on dark overlay */
 }

@@ -138,8 +138,8 @@ document.addEventListener('DOMContentLoaded', () => {
             clickable: true,
         },
         navigation: {
-            nextEl: '.category-slider .swiper-button-next',
-            prevEl: '.category-slider .swiper-button-prev',
+            nextEl: '.category-slider-nav .swiper-button-next',
+            prevEl: '.category-slider-nav .swiper-button-prev',
         },
         breakpoints: {
             // when window width is >= 576px
