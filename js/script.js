@@ -108,10 +108,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Hero Slider Initialization
     const heroSlider = new Swiper('.hero-slider .swiper-container', {
         loop: true,
-        // autoplay: {
-        //     delay: 7000,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 7000,
+            disableOnInteraction: false,
+        },
         speed: 800,
         effect: 'fade',
         fadeEffect: {
@@ -131,6 +131,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const categorySlider = new Swiper('.category-slider .swiper-container', {
         loop: true,
         speed: 600,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
         slidesPerView: 1,
         spaceBetween: 20,
         pagination: {
